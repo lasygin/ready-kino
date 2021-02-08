@@ -1,0 +1,175 @@
+/*Reset*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  color: #29edff;
+  background-color: #4520ab;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 0 30px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav_item {
+  margin: 0 20px;
+  padding: 2px 0;
+  cursor: pointer;
+}
+
+.account {
+  cursor: pointer;
+  color: #ffbc5b;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  color: #4520ab;
+}
+
+.content {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search_bar {
+  margin: 3em 0;
+}
+
+input {
+  width: 20em;
+  height: 2em;
+  text-align: center;
+  margin-right: 5px;
+  letter-spacing: 1px;
+}
+
+button {
+  width: 5em;
+  height: 2em;
+  background-color: #ffbc5b;
+  color: #4520ab;
+  text-transform: uppercase;
+  border: 0;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:active {
+  background-color: #4520ab;
+  color: #ffbc5b;
+}
+
+.content_block {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px 5em 5px;
+}
+
+.content_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+img {
+  height: 300px;
+  width: auto;
+  border-radius: 5px;
+}
+
+img:hover {
+  border: 2px solid #ffbc5b;
+  cursor: pointer;
+}
+
+h3 {
+  width: 200px;
+  margin: 5px 0;
+}
+
+footer {
+  height: 40px;
+  background-color: #4520ab;
+  display: flex;
+  align-items: center;
+  color: #ffbc5b;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .content {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content {
+    max-width: 500px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 2em;
+  }
+
+  .account {
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    max-width: 500px;
+  }
+
+  header {
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+
+  .search_bar {
+    margin: 2em 0;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  input {
+    width: 15em;
+  }
+}
